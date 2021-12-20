@@ -1,10 +1,9 @@
 import React from 'react'
-import logo from './logo.svg'
 import { useWeb3 } from '@3rdweb/hooks'
 import './App.css'
 
 function App() {
-  const { connectWallet, address, error, provider } = useWeb3()
+  const { connectWallet, address } = useWeb3()
 
   if (address) {
     console.log('Connected address', address)
