@@ -12,6 +12,6 @@ code {
     monospace;
 }
 
-html {
+html, button, .nes-btn {
   cursor: default
 }
