@@ -17,7 +17,7 @@ function App() {
           Welcome to CandyDAO
         </p>
         {!address && (
-          <button onClick={() => connectWallet('injected')}>Connect</button>
+          <button onClick={() => connectWallet('injected')} className="nes-btn">Connect</button>
         )}
         {address && (
           <h1>connected</h1>
