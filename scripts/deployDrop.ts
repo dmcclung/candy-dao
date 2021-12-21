@@ -1,16 +1,8 @@
-import { ThirdwebSDK } from '@3rdweb/sdk'
 import { readFileSync } from 'fs'
-import { ethers } from 'ethers'
 import configuration from './configuration'
+import sdk from './getSdk'
 
-const { privateKey, network, walletAddress } = configuration
-
-const sdk = new ThirdwebSDK(
-  new ethers.Wallet(
-    privateKey,
-    ethers.getDefaultProvider(network),
-  ),
-);
+const { walletAddress } = configuration;
 
 (async () => {
   try {
